@@ -1,0 +1,25 @@
+package class1;
+
+import java.util.Scanner;
+
+public class exercise14_1 {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("음료수 종류 입력 : ");
+		String coffee = s.next();
+		System.out.print("잔수 입력 : ");
+		int count = s.nextInt();
+		int price=0;
+		if (coffee.equals("에스프레소"))
+			price=2000*count;
+		else if (coffee.equals("아메리카노"))
+			price = 2500*count;
+		else if (coffee.equals("카푸치노"))
+			price = 3000*count;
+		else if (coffee.equals("카페라떼"))
+			price = 3500*count;
+		System.out.println("커피 = "+coffee+" ,잔수 = "+count);
+		System.out.println("가격 = "+price+"원");
+	}	
+}
