@@ -1,0 +1,20 @@
+package class1;
+
+import java.util.Scanner;
+
+public class exercise13 {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("수 입력: ");
+		int i = s.nextInt();
+		switch(i) {
+		case 1:System.out.println("!");
+		break;
+		case 2:System.out.println("@");
+		break;
+		case 3:System.out.println("#");
+		break;
+		default:System.out.println("*");
+		}
+	}
+}
